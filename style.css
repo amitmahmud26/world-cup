@@ -5,9 +5,54 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* banner */
 
 .banner {
+    background-color: #141414;
+    border-radius: 25px;
+    width: 85%;
+    height: 550px;
+    color: aliceblue;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.title {
+    padding-left: 70px;
+    padding-top: 40px;
+}
+
+.title h1 {
+    font-size: 3.7em;
+    margin-bottom: 0;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.title p {
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.banner img {
+    width: 90%;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.banner-left {
+    display: flex;
+}
+
+/* .banner {
     background-color: #161616;
     display: flex;
     justify-content: center;
@@ -44,15 +89,22 @@ p {
 
 .banner-right {
     width: 50%;
-}
+} */
+
+/* button and animation */
 
 .link-button {
     text-decoration: none;
     color: white;
-    background-color: #DD0000;
+    background-color: #10b8eb;
     padding: 10px 20px;
     border-radius: 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
 
+.link-button:hover {
+    opacity: 1;
 }
 
 /* links */
@@ -78,13 +130,15 @@ p {
     grid-template-columns: repeat(1, 1fr);
 }
 
-.special{
+.special {
     background-color: #141414;
 }
+
 .blog-button {
-    background-color: #c20404 !important;
+    background-color: #10b8eb !important;
     color: white !important;
 }
+
 /* Transfer  */
 
 .second-section {
@@ -109,7 +163,7 @@ p {
     border-radius: 5px;
     box-shadow: 2px 2px 15px hsla(0, 0%, 9%, 0.404);
     width: 100%;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
 }
 
 .transfer img {
@@ -192,4 +246,61 @@ span {
 
 .fa-instagram {
     font-size: 30px;
+}
+
+/* ---------
+    Media Screen
+------------- */
+
+
+/* ------------
+    Mobile Device
+--------------- */
+
+@media only screen and (max-width: 688px) {
+    .banner-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        /* height: 800px; */
+    }
+
+    .banner-left h1 {
+        font-size: 25px;
+    }
+
+    .banner-left p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banner-left img {
+        width: 22%;
+        padding-left: 50px;
+    }
+
+    .second-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .links{
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 550px;
+    }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 120px;
+        }
 }

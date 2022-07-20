@@ -46,13 +46,20 @@ p {
     width: 50%;
 }
 
+/* button and animation */
+
 .link-button {
     text-decoration: none;
     color: white;
-    background-color: #DD0000;
+    background-color: #10b8eb;
     padding: 10px 20px;
     border-radius: 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
 
+.link-button:hover {
+    opacity: 1;
 }
 
 /* links */
@@ -83,7 +90,7 @@ p {
 }
 
 .blog-button {
-    background-color: #c20404 !important;
+    background-color: #10b8eb !important;
     color: white !important;
 }
 
@@ -99,7 +106,7 @@ p {
 
 .transfers {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5%;
     column-gap: 2%;
 }
