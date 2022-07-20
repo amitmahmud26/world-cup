@@ -61,32 +61,26 @@ main {
     margin: 0 10%;
     margin-bottom: 100px;
 }
-
 h1,
 p {
     color: #FFFFFF;
 }
-
 .banner-left {
     padding-left: 90px;
     width: 50%;
 }
-
 .banner-left h1 {
     font-size: 60px;
     margin-bottom: 0;
     margin-top: 0;
 }
-
 .banner-left p {
     font-size: 14px;
     margin-bottom: 50px;
 }
-
 .banner img {
     width: 100%;
 }
-
 .banner-right {
     width: 50%;
 } */
@@ -271,9 +265,10 @@ span {
         font-size: 25px;
     }
 
-    .banner-left p {
-        white-space: nowrap;
+   .khub-valo-para {
+    width: 200px;
         overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
     }
 
@@ -282,25 +277,25 @@ span {
         padding-left: 50px;
     }
 
-    .second-section{
+    .second-section {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .links{
+    .links {
         border: 0;
         background-color: white;
     }
 
-    .transfers{
+    .transfers {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin-bottom: 550px;
     }
 
-        .footer {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding-bottom: 120px;
-        }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 120px;
+    }
 }
