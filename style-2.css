@@ -5,45 +5,51 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* banner */
 
 .banner {
-    background-color: #161616;
+    background-color: #141414;
+    border-radius: 25px;
+    width: 85%;
+    height: 550px;
+    color: aliceblue;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin: 0 10%;
+    margin-top: 35px;
     margin-bottom: 100px;
 }
 
-h1,
-p {
-    color: #FFFFFF;
+.title {
+    padding-left: 70px;
+    padding-top: 40px;
 }
 
-.banner-left {
-    padding-left: 90px;
-    width: 50%;
-}
-
-.banner-left h1 {
-    font-size: 60px;
+.title h1 {
+    font-size: 3.7em;
     margin-bottom: 0;
-    margin-top: 0;
+    line-height: 1.1;
+    font-weight: 600;
 }
 
-.banner-left p {
-    font-size: 14px;
-    margin-bottom: 50px;
+.title p {
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 200;
 }
 
 .banner img {
-    width: 100%;
+    width: 90%;
+    padding-top: 20px;
+    padding-right: 50px;
 }
 
-.banner-right {
-    width: 50%;
+.banner-left {
+    display: flex;
 }
 
 /* button and animation */
@@ -211,4 +217,222 @@ span {
 
 .fa-instagram {
     font-size: 30px;
+}
+
+/* -----------
+    Media Screen
+------------- */
+
+
+/* ------------
+    Mobile Device
+--------------- */
+
+@media only screen and (max-width: 688px) {
+    .banner-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-left h1 {
+        font-size: 25px;
+    }
+
+    .khub-valo-para {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .banner-left img {
+        width: 81%;
+        padding-left: 50px;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 550px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 120px;
+    }
+}
+
+/* -------------
+    Tablet Device
+--------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .banner-left h1 {
+        font-size: 50px;
+    }
+
+    .khub-valo-para {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .link-button {
+        padding: 20px 30px;
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .special-button {
+        max-height: 25px;
+        max-width: 65px;
+    }
+
+    .ftr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* padding-bottom: 120px; */
+    }
+}
+
+/* -----------
+    Media Screen
+------------- */
+
+
+/* ------------
+    Mobile Device
+--------------- */
+
+@media only screen and (max-width: 688px) {
+    .banner-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-left h1 {
+        font-size: 25px;
+    }
+
+    .khub-valo-para {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .banner-left img {
+        width: 81%;
+        padding-left: 50px;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 550px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 120px;
+    }
+}
+
+/* -------------
+    Tablet Device
+--------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .banner {
+        min-height: 700px;
+    }
+
+    .banner-left h1 {
+        font-size: 50px;
+    }
+
+    .khub-valo-para {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .link-button {
+        padding: 20px 30px;
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .special-button {
+        max-height: 25px;
+        max-width: 65px;
+    }
+
+    .ftr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* padding-bottom: 120px; */
+    }
 }

@@ -242,7 +242,7 @@ span {
     font-size: 30px;
 }
 
-/* ---------
+/* -----------
     Media Screen
 ------------- */
 
@@ -257,16 +257,14 @@ span {
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
-        /* width: 100%; */
-        /* height: 800px; */
     }
 
     .banner-left h1 {
         font-size: 25px;
     }
 
-   .khub-valo-para {
-    width: 200px;
+    .khub-valo-para {
+        width: 200px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -297,5 +295,65 @@ span {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 120px;
+    }
+}
+
+/* -------------
+    Tablet Device
+--------------- */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .banner-left h1 {
+        font-size: 50px;
+    }
+
+    .khub-valo-para {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .link-button {
+        padding: 20px 30px;
+    }
+
+    .links {
+        border: 0;
+        background-color: white;
+    }
+
+    .transfers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .special-button{
+        max-height: 25px;
+        max-width: 65px;
+    }
+
+    .ftr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* padding-bottom: 120px; */
+    }
+}
+
+/* for special case - invisibling div and visibling a button */
+
+@media only screen and (min-width: 993px) {
+    .special-button {
+        display: none;
+        visibility: hidden;
     }
 }
